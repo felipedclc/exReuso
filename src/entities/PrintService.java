@@ -17,13 +17,13 @@ public class PrintService <T> {
 		return list.get(0);
 	}
 	public void print() {
-		System.out.println("[ ");
+		System.out.print("[");
 		if(!list.isEmpty()) {
-			System.out.println(list.get(0));
+			System.out.print(list.get(0));
 		}
 		for(int i=0; i<list.size(); i++) {
-			System.out.println(", " + list.get(i));
+			System.out.print(", " + list.get(i));
 		}
-		System.out.println(" ]");
+		System.out.println("]");
 	}
 }
