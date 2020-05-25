@@ -12,7 +12,7 @@ public class program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		PrintService ps = new PrintService();
+		PrintService <Integer> ps = new PrintService<>();
 		
 		System.out.println("How many values? ");
 		int n = sc.nextInt();
@@ -22,6 +22,7 @@ public class program {
 			ps.addValue(value);
 		}
 		ps.print();
+		Integer x = ps.first();
 		System.out.println("First: " + ps.first());
 		
 		sc.close();
